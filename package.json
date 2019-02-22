@@ -1,0 +1,47 @@
+{
+  "name": "@pown/aws",
+  "version": "2.0.0",
+  "description": "Pownage guaranteed",
+  "main": "lib/index.js",
+  "scripts": {
+    "aws": "POWN_ROOT=. pown-cli aws",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-aws.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-aws/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-aws#readme",
+  "devDependencies": {
+    "@pown/cli": "^2.11.0",
+    "@pown/toolchain": "^2.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.408.0"
+  },
+  "pown": {
+    "commands": [
+      "lib/commands/aws.js"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "extends": "./.babelrc"
+        }
+      ]
+    ]
+  }
+}
