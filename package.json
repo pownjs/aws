@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "aws": "POWN_ROOT=. pown-cli aws",
+    "script": "POWN_ROOT=. pown-cli script",
     "test": "mocha"
   },
   "repository": {
@@ -23,11 +24,12 @@
   },
   "homepage": "https://github.com/pownjs/pown-aws#readme",
   "devDependencies": {
-    "@pown/cli": "^2.12.3",
+    "@pown/cli": "^2.14.1",
+    "@pown/script": "^2.9.0",
     "@pown/toolchain": "^2.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.409.0"
+    "aws-sdk": "^2.422.0"
   },
   "pown": {
     "commands": [
