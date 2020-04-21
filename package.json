@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/pownjs/pown-aws#readme",
   "devDependencies": {
-    "@pown/cli": "^2.14.1",
-    "@pown/script": "^2.9.0",
+    "@pown/cli": "^2.20.0",
+    "@pown/script": "^2.10.1",
     "@pown/toolchain": "^2.0.0"
   },
   "dependencies": {
