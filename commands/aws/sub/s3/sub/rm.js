@@ -9,7 +9,7 @@ exports.yargs = {
 
         const s3 = new awsSdk.S3()
 
-        const { s3URI } = require('../../../../uri')
+        const { s3URI } = require('../../../../../lib/uri')
 
         await s3.deleteObject(s3URI(path, 'rm')).promise()
     }

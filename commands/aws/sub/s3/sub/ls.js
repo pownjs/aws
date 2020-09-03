@@ -10,7 +10,7 @@ exports.yargs = {
         const s3 = new awsSdk.S3()
 
         if (bucket) {
-            const { s3URI } = require('../../../../uri')
+            const { s3URI } = require('../../../../../lib/uri')
 
             const { Contents: contents } = await s3.listObjects(s3URI(bucket, 'ls')).promise()
 

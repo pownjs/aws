@@ -11,7 +11,7 @@ exports.yargs = {
 
         const s3 = new awsSdk.S3()
 
-        const { s3URI } = require('../../../../uri')
+        const { s3URI } = require('../../../../../lib/uri')
 
         let promise
 
@@ -35,6 +35,8 @@ exports.yargs = {
         }
         else {
             destinationStream = require('fs').createWriteStream(destination)
+
+            promise = Promise.resolve()
         }
 
         const pipelineAsync = promisify(pipeline)

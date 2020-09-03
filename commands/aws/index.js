@@ -3,7 +3,7 @@ exports.yargs = {
     describe: 'Amazon Web Services (AWS)',
 
     builder: (yargs) => {
-        yargs.command(require('./services/s3').yargs)
-        yargs.command(require('./services/cloudwatch').yargs)
+        yargs.command(require('./sub/s3').yargs)
+        yargs.command(require('./sub/cloudwatch').yargs)
     }
 }
