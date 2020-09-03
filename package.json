@@ -4,9 +4,10 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
+    "test": "mocha",
+    "build": "true",
     "aws": "POWN_ROOT=. pown-cli aws",
-    "script": "POWN_ROOT=. pown-cli script",
-    "test": "mocha"
+    "script": "POWN_ROOT=. pown-cli script"
   },
   "repository": {
     "type": "git",
@@ -24,17 +25,17 @@
   },
   "homepage": "https://github.com/pownjs/pown-aws#readme",
   "devDependencies": {
-    "@pown/cli": "^2.20.0",
+    "@pown/cli": "^2.23.0",
     "@pown/script": "^2.10.1",
     "@pown/toolchain": "^2.0.0"
   },
   "dependencies": {
     "@pown/async": "^2.7.0",
-    "aws-sdk": "^2.422.0"
+    "aws-sdk": "^2.745.0"
   },
   "pown": {
     "commands": [
-      "lib/commands/aws.js"
+      "commands/aws"
     ]
   },
   "browserify": {
