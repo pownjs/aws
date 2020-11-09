@@ -4,6 +4,8 @@ exports.yargs = {
 
     builder: (yargs) => {
         yargs.command(require('./sub/s3').yargs)
+        yargs.command(require('./sub/ses').yargs)
+        yargs.command(require('./sub/sns').yargs)
         yargs.command(require('./sub/cloudwatch').yargs)
     }
 }
