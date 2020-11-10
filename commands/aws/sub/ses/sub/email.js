@@ -32,12 +32,12 @@ exports.yargs = {
                 ]
             },
 
-            Message: {
-                Subject: {
-                    Charset: 'UTF-8',
-                    Data: subject
-                },
+            Subject: {
+                Charset: 'UTF-8',
+                Data: subject
+            },
 
+            Message: {
                 Body: {
                     Text: {
                         Charset: 'UTF-8',
