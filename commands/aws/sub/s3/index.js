@@ -6,5 +6,6 @@ exports.yargs = {
         yargs.command(require('./sub/ls').yargs)
         yargs.command(require('./sub/cp').yargs)
         yargs.command(require('./sub/rm').yargs)
+        yargs.command(require('./sub/sign').yargs)
     }
 }
