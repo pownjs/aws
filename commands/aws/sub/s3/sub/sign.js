@@ -17,5 +17,7 @@ exports.yargs = {
         const url = await getSignedUrlAsync('getObject', s3URI(source, 'sign'))
 
         console.log(url)
+
+        return url
     }
 }
