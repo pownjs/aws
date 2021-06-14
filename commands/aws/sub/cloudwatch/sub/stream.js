@@ -15,7 +15,7 @@ exports.yargs = {
         const { interval, group, stream } = argv
 
         const awsSdk = require('aws-sdk')
-        const { sleep } = require('@pown/async/lib/timers')
+        const { sleep } = require('@pown/async/lib/sleep')
 
         const cloudwatchlogs = new awsSdk.CloudWatchLogs()
 
